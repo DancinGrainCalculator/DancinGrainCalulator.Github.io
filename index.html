@@ -74,7 +74,7 @@ left: 20px;
 function myFunction() {
   var x = document.getElementById("num").value;
   if(!isNaN(x)){
-  	document.getElementById("demo").innerHTML = "total price: $" + ((x * 6.90) - (Math.floor(x/4)*2.60));
+  	document.getElementById("demo").innerHTML = "total price: $" + ((x * 6.90) - (Math.floor(x/4)*2.60)).toFixed(2);
   }
   
 }
