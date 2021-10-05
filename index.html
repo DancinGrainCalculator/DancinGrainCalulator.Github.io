@@ -53,6 +53,11 @@ bottom:20px;
 left: 20px;
 
 }
+    
+input{
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    
+}
 
 </style>
 </head>
@@ -74,7 +79,7 @@ left: 20px;
 function myFunction() {
   var x = document.getElementById("num").value;
   if(!isNaN(x)){
-  	document.getElementById("demo").innerHTML = "\xa0\xa0\xa0\xa0total price: $" + ((x * 6.90) - (Math.floor(x/4)*2.60)).toFixed(2);
+  	document.getElementById("demo").innerHTML = "\xa0\xa0\xa0\xa0\xa0total price: $" + ((x * 6.90) - (Math.floor(x/4)*2.60)).toFixed(2);
   }
   
 }
